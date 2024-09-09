@@ -15,3 +15,36 @@ This first step (version) consists of a custom command-line interface for data m
 - **Dynamic web content** using Python and HTML/CSS.
 - **RESTful APIs** for interaction with frontend clients.
 - **Unit tests** for verifying correctness of models and storage engine.
+
+## Command Interpreter
+
+### How to Start the Command Interpreter
+
+To start the command interpreter, you need to run the console.py file. Ensure that you are in the root directory of the project.
+
+```bash
+$ ./console.py
+```
+
+### Command Syntax
+
+| Command | Description                                         | Syntax                                                                                                                                            |
+| ------- | --------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| help    | Provides information about a specific command       | `(hbnb) help <command>`                                                                                                                           |
+| create  | Creates a new instance of a class and prints the ID | `(hbnb) create <ClassName>`                                                                                                                       |
+| show    | Prints the string representation of an instance     | `(hbnb) show <ClassName> <id>` or `(hbnb) <ClassName>.show(<id>)`                                                                                 |
+| destroy | Deletes an instance based on the class name and ID  | `(hbnb) destroy <ClassName> <id>` or `(hbnb) <ClassName>.destroy(<id>)`                                                                           |
+| all     | Prints all string representations of all instances  | `(hbnb) all` or `(hbnb) all <ClassName>`                                                                                                          |
+| update  | Updates an instance based on the class name and ID  | `(hbnb) update <ClassName> <id> <attribute name> "<attribute value>"` or `(hbnb) <ClassName>.update(<id>, <attribute name>, "<attribute value>")` |
+| quit    | Exits the command interpreter                       | `(hbnb) quit`                                                                                                                                     |
+| EOF     | Exits the command interpreter                       | `(hbnb) EOF`                                                                                                                                      |
+
+### The Console - Usage
+
+The console works both in interactive mode and non-interactive mode (much like a Unix shell). It prints a prompt (hbnb) and waits for the user input.
+
+### Interactive Mode - Examples
+
+### Non-interactive Mode Example
+
+### Available Commands
