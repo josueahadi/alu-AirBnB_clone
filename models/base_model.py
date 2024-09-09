@@ -59,3 +59,4 @@ class BaseModel:
         Returns a string representation of the BaseModel class.
         """
         return f"[{self.__class__.__name__}] ({self.id}) {self.__dict__}"
+    
