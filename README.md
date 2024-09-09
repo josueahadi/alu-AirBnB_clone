@@ -1,4 +1,4 @@
-# HBnB - An AirBnB Clone Project (v1)
+# HBnB - AirBnB Clone Project (v1)
 
 ## Description
 
@@ -45,6 +45,79 @@ The console works both in interactive mode and non-interactive mode (much like a
 
 ### Interactive Mode - Examples
 
-### Non-interactive Mode Example
+Your shell should work like this in interactive mode:
 
-### Available Commands
+Create a New User
+
+```bash
+$ ./console.py
+(hbnb) create User
+d55bc64d-e555-45db-bf1f-648a8fbd43df
+(hbnb)
+```
+
+Show an Object
+
+```bash
+$ ./console.py
+(hbnb) show User d55bc64d-e555-45db-bf1f-648a8fbd43df
+[User] (d55bc64d-e555-45db-bf1f-648a8fbd43df) {'id': 'd55bc64d-e555-45db-bf1f-648a8fbd43df', 'created_at': '2024-09-09T12:00:00', 'updated_at': '2024-09-09T12:00:00'}
+(hbnb)
+```
+
+Update an Object
+
+```bash
+$ ./console.py
+(hbnb) update User d55bc64d-e555-45db-bf1f-648a8fbd43df email "user@example.com"
+(hbnb) show User d55bc64d-e555-45db-bf1f-648a8fbd43df
+[User] (d55bc64d-e555-45db-bf1f-648a8fbd43df) {'id': 'd55bc64d-e555-45db-bf1f-648a8fbd43df', 'email': 'user@example.com', 'created_at': '2024-09-09T12:00:00', 'updated_at': '2024-09-09T12:10:00'}
+(hbnb)
+```
+
+List All Objects
+
+```bash
+$ ./console.py
+(hbnb) all
+[User] (d55bc64d-e555-45db-bf1f-648a8fbd43df) {'id': 'd55bc64d-e555-45db-bf1f-648a8fbd43df', 'created_at': '2024-09-09T12:00:00', 'updated_at': '2024-09-09T12:00:00'}
+(hbnb)
+```
+
+### Non-interactive Mode - Examples
+
+But also in non-interactive mode: (like the Shell project in C)
+
+```bash
+$ echo "help" | ./console.py
+(hbnb)
+
+Documented commands (type help <topic>):
+========================================
+EOF  help  quit
+(hbnb)
+$
+$ cat test_help
+help
+$
+$ cat test_help | ./console.py
+(hbnb)
+
+Documented commands (type help <topic>):
+========================================
+EOF  help  quit
+(hbnb)
+$
+```
+
+### Project Structure
+
+```bash
+├── console.py       # Entry point of the command interpreter
+├── models           # Contains all the models
+│ ├── base_model.py  # Base class for all models
+│ └── engine         # Storage engines (file_storage.py)
+├── tests            # Unit tests for the project
+|── README.md        # Project documentation
+└── AUTHORS          # Contributors
+```
