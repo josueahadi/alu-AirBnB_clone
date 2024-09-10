@@ -48,4 +48,3 @@ class Place(BaseModel):
         # self.latitude = Place.latitude
         # self.longitude = Place.longitude
         # self.amenity_ids = Place.amenity_ids
-        

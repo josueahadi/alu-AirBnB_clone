@@ -31,4 +31,3 @@ class User(BaseModel):
         # self.password = User.password
         # self.first_name = User.first_name
         # self.last_name = User.last_name
-        

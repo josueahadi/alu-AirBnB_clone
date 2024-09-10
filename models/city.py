@@ -21,4 +21,3 @@ class City(BaseModel):
         super().__init__(*args, **kwargs)
         # self.name = City.name
         # self.state_id = City.state_id
-        
