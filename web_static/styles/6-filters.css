@@ -40,9 +40,38 @@ h4 {
 .filters .locations,
 .filters .amenities {
   height: 100%;
-  width: 25%;
+  width: 25;
 }
 
-.locations {
+.filters .locations {
   border-right: 1px solid #dddddd;
+}
+
+.filters .popover {
+  background-color: #fafafa;
+  color: #484848;
+  width: 100%;
+  border: #dddddd 1px solid;
+  border-radius: 4px;
+  list-style-type: none;
+  padding: 0;
+  display: block;
+  visibility: hidden;
+  z-index: 1;
+  position: relative;
+  margin-top: 17px;
+}
+
+.filters .popover li {
+  margin: 10px 50px;
+}
+
+.filters .locations:hover .popover {
+  display: block;
+  visibility: visible;
+}
+
+.filters .amenities:hover .popover {
+  display: block;
+  visibility: visible;
 }
